@@ -1,11 +1,15 @@
 import type { NextPage } from 'next'
-import styles from '../styles/Home.module.css'
+import LeftSide from '../components/leftSide'
+import Page from '../components/page'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-
-    </div>
+    <>
+      <a href="/api/pdf" download="generated_pdf.pdf" className="downloadBtn">Download PDF</a>
+      <Page>
+        <LeftSide />
+      </Page>
+    </>
   )
 }
 
